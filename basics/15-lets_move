@@ -1,2 +1,2 @@
 #!/bin/bash
-find / -type f -exec grep -lZ '^[A-Z]' {} + | xargs -0 -I {} mv {} /tmp/u/
+find / -f {} | grep "^[A-Z]" {} | mv /tmp/u/
